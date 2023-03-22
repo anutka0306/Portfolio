@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: "Khula", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16d9e3;
+}
+
+.start {
+    font-size: 1.5rem;
+}
+
+h1 {
+    line-height: 1.4;
+    font-size: 4rem;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+    background: linear-gradient(90deg, #29323c 0%, #485563 100%);
+}
+.screen.last{
+    flex-direction: row;
+}
+.screen.last .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.time-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.time-list li {
+    margin: 10px;
+}
+
+.time-btn {
+    background-color: transparent;
+    border: 2px solid #c0c0c0;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.time-btn:hover {
+    border: 2px solid #16d9e3;
+    color: #16d9e3;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.primary {
+    color: #16d9e3;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+    box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.errors {
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
+    box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
+    border-radius: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    margin-left: 30px;
+}
+.errors::-webkit-scrollbar {
+    width: 12px;
+}
+.errors::-webkit-scrollbar-track{
+    background: #2a333d;
+}
+.errors::-webkit-scrollbar-thumb{
+    background-color: #16d9e3;
+    opacity: .7;
+}
+
+.answers-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.answer{
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.btn-default{
+    padding: 15px 30px;
+    border-radius: 3px;
+    background: #1d1d1d;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    color: whitesmoke;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.game-errors s{
+    color: indianred;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.game-errors b{
+    color: mediumseagreen;
+}

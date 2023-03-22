@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Muli Regular";
+    src: url("../fonts/muli-regular/muli-regular.woff2"); /-* IE9 Compat Modes */
+src: url("../fonts/muli-regular/muli-regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+.pad-l-10{
+    padding-left: 10%;
+}
+.pad-r-10{
+    padding-right: 10%;
+}
+.header__right{
+    background-image: url("../assets/points3.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+.header__right div:nth-child(1){
+    position: relative;
+}
+.header__right .my__photo{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: -50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.header__right div:nth-child(2){
+    background-image: url("/assets/bg-code.webp");
+    background-repeat: no-repeat;
+    filter: hue-rotate(45deg);
+    background-size: cover;
+    height: 95vh;
+    /*height: 500px;*/
+}
+.header__title{
+    width: 70%;
+}
+.header__description{
+    width: 70%;
+    font-family: 'Muli Regular';
+}
+.scroll__down{
+    width: 70%;
+}
+
+/* Works Section */
+.card.work__card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.card.work__card img{
+    height: 285px;
+    object-fit: cover;
+    object-position: top;
+}
+.card.work__card .card-text{
+    font-family: 'Muli Regular';
+}
+
+/* Contact Section */
+.contact__section{
+    background-image: url("/images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+
+/* Work Page */
+.work__title{
+    font-size: 32px;
+}
+.work__description{
+    font-family: 'Muli Regular';
+    font-size: 15px;
+}
+.work__image{
+    width: 90%;
+    /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;*/
+}
+.work__content{
+    font-family: 'Muli Regular';
+    font-size: 15px;
+}
+.work__divider{
+    height: 1px;
+}
+
+@media (max-width: 1200px) {
+    .contact__section{
+        background-size: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .contact__section{
+        background-image: none;
+    }
+}
