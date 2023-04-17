@@ -13,7 +13,7 @@ $this->title = 'My Portfolio';
         <p class="header__description">
             Hi, my name is Anna Kotelnikova and I'm a PHP Backend Developer based in Alicante , Spain. I have over 5 years of experience in the web development. I'm specialized in Laravel, Symfony, Yii Frameworks. You can check out my work below.
         </p>
-        <small class="font-monospace mt-5 text-left scroll__down"><a href="#" class="text-black text-decoration-none"> Scroll Down ↓</a></small>
+        <small class="font-monospace mt-5 text-left scroll__down"><a href="#latest" class="text-black text-decoration-none"> Scroll Down ↓</a></small>
     </div>
     <div class="col-md-6 col-12 pe-0">
         <div class="d-flex header__right">
@@ -26,7 +26,7 @@ $this->title = 'My Portfolio';
 </div>
 
     <div class="row mt-5 pb-5 pt-5 pad-l-10 pad-r-10">
-        <h2 class="font-monospace">Latest work --</h2>
+        <h2 class="font-monospace" id="latest">Latest work --</h2>
         <div class="container">
             <div class="row mt-5">
                 <?php foreach ($works as $work):?>
