@@ -45,16 +45,16 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     'url' => ['/site/index'],
                     'linkOptions' => ['class' => 'text-light font-monospace'],
             ],
-            [
+            /*[
                     'label' => 'About',
                     'url' => ['/site/about'],
                     'linkOptions' => ['class' => 'text-light font-monospace'],
-            ],
-            [
+            ],*/
+           /* [
                     'label' => 'Contact',
                     'url' => ['/site/contact'],
                     'linkOptions' => ['class' => 'text-light font-monospace']
-                ],
+                ],*/
             /*[
                     'label' => 'Login',
                     'url' => ['/site/login'],
